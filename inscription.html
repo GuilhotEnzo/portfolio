@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Inscription</title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+   <form action="sendToMySecondYearInIut.php" method="post">
+     <fieldset>
+       <legend> Informations personnelles </legend>
+     <label for="surname">Nom *</label>
+     <input id="surname" name="uname" type="text" tabindex="1" required><br>
+     <label for="firstname">Prénom</label>
+     <input id="firstname" name="firstname" type="text" tabindex="2"><br>
+     <input type="radio" id="homme" name="sexe" value="homme" tabindex="3">
+     <label for="homme">Homme</label><br>
+     <input type="radio" id="femme" name="sexe" value="femme" tabindex="4">
+     <label for="femme">Femme</label><br>
+     <label for="naissance">Date de naissance:</label>
+     <input type="date" id="naissance" name="naissance" tabindex="5"><br>
+     <label for="email">Email:*</label>
+     <input type="email" id="email" name="email" tabindex="6" placeholder=“yourmail@domain.com” required><br>
+     <label for="pays">Pays d'origine:</label>
+     <select name="pays" id="pays" tabindex="7">
+       <option value="">France</option>
+       <option value="us">Etats-Unis</option>
+       <option value="cn">Chine</option>
+       <option value="vn">Vietnam</option>
+     </select><br>
+     </fieldset>
+     <fieldset>
+       <legend> Les sports de combat </legend>
+     <label for="Karaté">Niveau de karaté:</label>
+     <input type="number" id="Karaté" name="Karaté" min="0" max="5" tabindex="8"><br>
+     <label for="martiaux">Arts martiaux préférés:</label>
+     <select name="martiaux" id="martiaux" multiple tabindex="9">
+       <option value="kf">Kung-fu</option>
+       <option value="kr">Karaté</option>
+       <option value="fc">Full-contact</option>
+     </select><br>
+     </fieldset>
+     <fieldset>
+       <legend> Inscription </legend>
+     <input type="radio" id="basique" name="engagement" value="basique" tabindex="10">
+     <label for="basique">Engagement Basique: 5€</label><br>
+     <input type="radio" id="gold" name="engagement" value="gold" tabindex="11">
+     <label for="gold">Engagement Gold: 15€</label><br>
+     <input type="radio" id="tatane" name="engagement" value="tatane" tabindex="12">
+     <label for="tatane">Tatane in your face: 50€</label><br>
+     <label for="mdp">Mot de passe:*</label>
+     <input type="password" id="mdp" name="mdp" tabindex="13" required pattern="[a-zA-Z0-9]{8-}"><br>
+     <input type="checkbox" id="condition" name="condition" value="condition" tabindex="14" required>
+     <label for="condition"> J’ai bien lu les clauses que je n’ai pas lues</label><br>
+     <label for="message"> Message pour Chuck</label>
+     <textarea id="message" name="message" rows="5" cols="33" tabindex="15" placeholder="Un inscrit sera tiré au sort, et verra son message transmis à Chuck Norris."></textarea><br>
+     </fieldset>
+     <input type="submit" value="Envoyer" tabindex="16">
+
+
+   </form>
