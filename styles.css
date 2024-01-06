@@ -108,7 +108,7 @@ main{
   display:flex;
 }
 article{
-  width:800px;
+  width:600px;
   background-color:white;
   max-width:1500px;
   min-width:200px;
