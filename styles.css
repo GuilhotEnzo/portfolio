@@ -107,13 +107,14 @@ main{
   display:flex;
 }
 article{
-  width:300px;
+  width:500px;
   background-color:white;
   max-width:500px;
   min-width:200px;
   flex-shrink:67%;
   flex-grow:3;
   margin: auto;
+  padding:25px;
 }
 aside{
   width:2000000px;
