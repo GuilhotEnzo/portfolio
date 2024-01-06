@@ -17,6 +17,7 @@ body {
 h2{
   font-family:"myFontName","Comic Sans MS";
   padding: 10px 0;
+  marge:auto;
 }
 .image{
   height:300px;
@@ -85,11 +86,7 @@ nav a{
   border:2px solid black;
 }
 .submenu{
-  position:absolute;
-  top:50px;
-  left:0px;
-  background-color: #aca;
-  display:none;
+  background-color: white;
 }
 nav > div:hover > .submenu{
   display:block;
