@@ -68,11 +68,12 @@ table{
   white-space:nowrap;
 }
 nav{
-  width:100%;
+  width:500%;
   height: 50px;
   display:flex;
   flex-direction:row;
   justify-content:flex-end;
+  marge:auto;
 }
 nav > div{
   background-color:white;
