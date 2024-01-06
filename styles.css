@@ -57,6 +57,7 @@ tbody>tr:nth-child(even){
 }
 tbody>tr:nth-child(odd){
   background-color: #CCC;
+  width: 70%;
 }
 p{
   margin: 30px 0;
@@ -72,21 +73,6 @@ table{
   display:block;
   overflow-x:scroll;
   white-space:nowrap;
-}
-.jeune{
-  height:150px;
-  float:left;
-  padding:5px;
-}
-.twitter{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-}
-.facebook{
-  position:fixed;
-  bottom:60px;
-  right:20px;
 }
 nav{
   width:75%;
