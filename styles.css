@@ -6,7 +6,8 @@ h3 {
 body {
   background-color:#838892;
   width:100%;
-  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
   line-height:150%;
   text-indent:5px;
 }
