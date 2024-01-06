@@ -68,15 +68,14 @@ table{
   white-space:nowrap;
 }
 nav{
-  width:75%;
-  margin:0 auto;
+  width:100%;
   height: 50px;
   display:flex;
   flex-direction:row;
   justify-content:flex-end;
 }
 nav > div{
-  background-color:#5BBDBF;
+  background-color:white;
   display:flex;
   position:relative;
   align-items:stretch;
@@ -86,6 +85,10 @@ nav a{
   border:2px solid black;
 }
 .submenu{
+  position:absolute;
+  top:50px;
+  left:0px;
+  display:none;
   background-color: white;
 }
 nav > div:hover > .submenu{
