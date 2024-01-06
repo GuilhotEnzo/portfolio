@@ -52,10 +52,10 @@ table .skill{
 }
 
 tbody>tr:nth-child(even){
-  background-color: #D3D3D3;
+  background-color: white;
 }
 tbody>tr:nth-child(odd){
-  background-color: red;
+  background-color: white;
 }
 p{
   margin: 30px 0;
@@ -104,7 +104,7 @@ header{
   display:flex;
   flex-direction:row;
   align-items:flex-end;
-  background-color:white;
+  background-color:#D3D3D3;
 }
 blockquote{
   margin:auto;
