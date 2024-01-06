@@ -114,11 +114,12 @@ main{
 }
 article{
   width:300px;
-  background-color:#CCC;
+  background-color:white;
   max-width:500px;
   min-width:200px;
   flex-shrink:67%;
   flex-grow:3;
+  margin: auto;
 }
 aside{
   width:2000000px;
