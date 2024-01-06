@@ -107,9 +107,9 @@ main{
   display:flex;
 }
 article{
-  width:500px;
+  width:1000px;
   background-color:white;
-  max-width:500px;
+  max-width:1500px;
   min-width:200px;
   flex-shrink:67%;
   flex-grow:3;
