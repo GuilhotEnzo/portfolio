@@ -167,3 +167,7 @@ tr>th:first-child:nth-child(odd){
 .burger:hover > #menu2{
   visibility:visible;
 }
+.foot{
+  background-color:black;
+  color:white;
+}
