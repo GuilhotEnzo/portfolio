@@ -110,7 +110,7 @@ main{
 article{
   width:600px;
   background-color:white;
-  max-width:1500px;
+  max-width:1000px;
   min-width:200px;
   flex-shrink:67%;
   flex-grow:3;
