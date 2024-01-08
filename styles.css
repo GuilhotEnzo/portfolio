@@ -167,13 +167,6 @@ tr>th:first-child:nth-child(odd){
   visibility:visible;
 }
 #foot{
-  width:600px;
   background-color:dimgrey;
   color:white;
-  max-width:1000px;
-  min-width:200px;
-  flex-shrink:67%;
-  flex-grow:3;
-  margin:auto;
-  padding:25px;
 }
