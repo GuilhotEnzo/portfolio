@@ -38,10 +38,6 @@ table .skill{
   padding: 0 5px;
 }
 
-.para{
-  display:flex;
-}
-
 tbody>tr:nth-child(even){
   background-color: white;
 }
@@ -51,12 +47,7 @@ tbody>tr:nth-child(odd){
 p{
   margin: 30px 0;
 }
-.par{
-  clear: both;
-}
-.para{
-  display:flex;
-}
+
 table{
   margin: auto;
   display:block;
@@ -115,6 +106,7 @@ article{
   flex-grow:3;
   margin: auto;
   padding:25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 aside{
   width:2000000px;
