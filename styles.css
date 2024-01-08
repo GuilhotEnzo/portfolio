@@ -55,6 +55,8 @@ table{
   white-space:nowrap;
 }
 nav{
+  display: flex;
+  flex-direction: row;
   width:600px;
   max-width:1000px;
   min-width:200px;
