@@ -23,10 +23,6 @@ h2{
   height:300px;
   float: right;
 }
-.skill{
-  color:red;
-  font-style:italic;
-}
 .lien{
   text-decoration: none;
 }
@@ -80,8 +76,8 @@ nav{
 }
 nav > div{
   background-color:white;
-  display:flex;
-  position:relative;
+  /*display:flex;*/
+  /*position:relative;*/
   align-items:stretch;
 }
 nav a{
