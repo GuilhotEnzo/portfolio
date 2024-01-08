@@ -78,7 +78,7 @@ nav > div{
   background-color:white;
   /*display:flex;*/
   /*position:relative;*/
-  align-items:stretch;
+  /*align-items:stretch;*/
 }
 nav a{
   padding: 0 10px;
