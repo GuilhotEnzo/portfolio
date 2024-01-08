@@ -68,11 +68,14 @@ table{
   white-space:nowrap;
 }
 nav{
-  width:500%;
+  width:600px;
+  max-width:1000px;
+  min-width:200px;
+  flex-shrink:67%;
+  flex-grow:3;
+  margin:auto;
+  padding:25px;
   height: 50px;
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-end;
   marge:auto;
 }
 nav > div{
