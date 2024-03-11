@@ -12,7 +12,7 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
-  background-color:#D3D3D3;
+  background-color:grey;
   width:100%;
   margin: auto;
   line-height:150%;
@@ -97,7 +97,7 @@ blockquote{
 
 article{
   width:60%;
-  background-color:white;
+  background-color:black;
   flex-shrink:67%;
   flex-grow:3;
   margin: auto;
