@@ -151,5 +151,5 @@ tr>th:first-child:nth-child(odd){
 footer {
   background-color:dimgrey;
   color:white;
-
+  text-align:center;
 }
