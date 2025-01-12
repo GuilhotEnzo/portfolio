@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-          <link rel="stylesheet" type="text/css" href="./styles.css">
-          <title>Mes projets</title>
-          <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-          <div class="burger">
-      		<img src="img/burger.png" alt="menu burger">
-      		<div id="menu2">
-        		<div><a href="./presentation.html">Présentation</a></div>
-        		<div><a href="./projets.html">Projets</a></div>
-     		</div>
-     	</div>
-     	<nav>
-       		<div><a href="./presentation.html">Page de présentation</a>
-			<div class="submenu">
-       				<div><a href="./presentation.html#id1">Présentation personnelle</a></div>
-       				<div><a href="./presentation.html#id2">Etudes</a></div>
-       				<div><a href="./presentation.html#id3">Passions</a></div>
-				<div><a href="./presentation.html#id4">Projets personnels pour le futur</a></div>
-			</div>
-		</div>
-       		<div><a href="./projets.html">Projets</a>
-			<div class="submenu">
-       				<div><a href="./ndi.html">La Nuit de l'Info</a></div>
-       				<div><a href="./rail.html">Les Aventuriers du rail</a></div>
-       				<div><a href="./formatiut.html">FormatIUT</a></div>
-			</div>
-		</div>
-    	</nav>
-</header>
 <body>
-	<article>
-		<h1>Mes projets</h1>
-         <p>
-                 Durant la première année et le début de la seconde année du BUT Informatique, j'ai eu l'occasion de réaliser un grand nombre de projets. 
-         </p>
-         <p>
-                 Certains sont directement liés au BUT en étant des travaux notés alors que d'autres sont liés à l'IUt mais sont des évènements sur la base du volontariat et sont des compétitions.
-         </p>
-         <ul>
-                 <p>En voici quelques-uns :</p>
-                 <li><a href="./ndi.html">La Nuit de l'Info</a></li>
-                 <li><a href="./rail.html">Les Aventuriers du rail</a></li>
-                 <li><a href="./formatiut.html">FormatIUT</a></li>
-				 <li><a href="./cgj.html">La Code Game Jam</a></li>
-         </ul>
-	</article>
+<header>
+    <div class="burger-menu">
+        <div class="burger-icon">
+            <span><a href="presentation.html">Présentation</a></span>
+            <span><a href="projets.html">Projets</a></span>
+            <span><a href="experience.html">Mon expérience</a></span>
+            <span><a href="competencesBUT.html">Compétences du BUT</a></span>
+            <span><a href="contact.html">Contact</a></span>
+        </div>
+    </div>
+    <nav class="desktop-menu">
+        <div><a href="presentation.html">Présentation</a></div>
+        <div><a href="projets.html">Projets</a>
+            <div class="submenu">
+                <div><a href="projets/aventuriersDuRail.html">Les Aventuriers du rail</a></div>
+                <div><a href="projets/formatIUT.html">FormatIUT</a></div>
+                <div><a href="projets/concertsPancreas.html">Concerts du Pancréas</a></div>
+                <div><a href="projets/nuitInfo.html">La Nuit de l'Info</a></div>
+                <div><a href="projets/codeGameJam.html">La Code Game Jam</a></div>
+            </div>
+        </div>
+        <div><a href="experience.html">Mon expérience</a></div>
+        <div><a href="competencesBUT.html">Compétences du BUT</a></div>
+        <div><a href="contact.html">Contact</a></div>
+    </nav>
+</header>
+<main>
+    <div class="chapitre">
+        <h1>Mes projets</h1>
+        <p>
+            Durant mes trois années de BUT, j'ai eu à effectuer plusieurs projets notés. Ces différents projets sont
+            appelés SAE et regroupent plusieurs cours afin de mettre nos compétences à l'épreuve. Voici donc les SAE les
+            plus intéressantes du point de vue du travail selon moi :
+        </p>
+        <p>- <a href="projets/aventuriersDuRail.html">Les Aventuriers du rail</a></p>
+        <p>- <a href="projets/formatIUT.html">FormatIUT</a></p>
+        <p>- <a href="projets/concertsPancreas.html">Concerts du Pancréas</a></p>
+
+        <p>J'ai également eu l'occasion de participer à quelques projets en dehors des cours. Les plus notables selon
+            moi sont mes participations à deux événements, la Code Game Jam et la nuit de l'Info :</p>
+        <p>- <a href="projets/nuitInfo.html">La Nuit de l'Info</a></p>
+        <p>- <a href="projets/codeGameJam.html">La Code Game Jam</a></p>
+    </div>
+</main>
+<footer>
+    <p class="list">Guilhot Enzo :</p>
+    <p class="list">
+        <a href="https://www.linkedin.com/in/enzo-guilhot-a9a11b264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1IEe%2Fg5NTlGwLX9K4bqvmQ%3D%3D"
+           target="_blank">Mon LinkedIn</a>
+        | <a href="https://github.com/GuilhotEnzo" target="_blank">Mon GitHub</a>
+        | <a href="https://drive.google.com/file/d/1YyvQhOwGKkjEcbicudt676tKe5xzGa2K/view?usp=sharing" target="_blank">Mon
+        CV</a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-  <footer>
-	  <p>
-		  Guilhot Enzo :
-	  		<br><a href="https://www.linkedin.com/in/enzo-guilhot-a9a11b264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1IEe%2Fg5NTlGwLX9K4bqvmQ%3D%3D" target="_blank">     Mon LinkedIn</a>
-		  	<br><a href="https://github.com/GuilhotEnzo" target="_blank">     Mon GitHub</a>
-	  		<br><a href="https://drive.google.com/file/d/1YyvQhOwGKkjEcbicudt676tKe5xzGa2K/view?usp=sharing" target="_blank">     Mon CV</a>
-	  </p>
-  </footer>
 </html>
    

@@ -1,26 +1,3 @@
-h1 {
-  font-style:bold;
-  margin:auto;
-  font-size: 250%;
-  text-align: center;
-}
-body {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  background-color:#474646;
-  width:100%;
-  margin: auto;
-  line-height:150%;
-  text-indent:3%;
-}
-
-h2{
-  font-family:"Liberation Sans","Comic Sans MS";
-  padding: 50px;
-  margin:auto;
-}
-
 .imageDiv {
   display: flex;
   flex-direction: row;
@@ -30,12 +7,11 @@ h2{
 img {
   height: 83%;
   width: 83%;
-  padding: 20px; 
+  padding: 20px;
 }
 
 a:link {
   color: rgb(54, 170, 216);
-  text-decoration: underline none;
 }
 
 a:visited {
@@ -53,25 +29,10 @@ a:hover {
 }
 
 p{
-  margin: 30px 0;
+  text-align: justify;
+  margin: 15px;
 }
 
-nav{
-  display: flex;
-}
-
-nav > div{
-  background-color:#181717;
-  /*display:flex;*/
-  /*position:relative;*/
-  /*align-items:stretch;*/
-  border-left: 2px solid black;
-  padding: 3%;
-  margin: 1%;
-  width: 25%;
-  font-size: 110%;
-  margin: auto;
-}
 .submenu{
   position:absolute;
   display:none;
@@ -81,20 +42,6 @@ nav > div{
 }
 nav > div:hover > .submenu{
   display: block;
-}
-header{
-  background-color:#181717;
-  width: 100%;
-}
-
-article{
-  width:60%;
-  background-color:#181717;
-  flex-shrink:67%;
-  flex-grow:3;
-  padding:25px;
-  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.2);
-  margin: 5% auto;
 }
 
 @media(max-width:768px) {
@@ -115,8 +62,8 @@ article{
 .burger{
   width:50px;
   position:fixed;
-  top:0px;
-  left:0px;
+  top:0;
+  left:0;
 }
 @media(min-width:480px){
   .burger{display:none;}
@@ -133,9 +80,190 @@ article{
   width: 30%;
 }
 
-footer {
-  background-color:#181717;
-  color:white;
-  text-align:center;
-  line-height: 2%;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
+
+body {
+  background-image: url('img/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Burger Menu (mobile uniquement) */
+.burger-menu {
+  display: none;
+  position: relative;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.burger-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-menu div {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-menu div a {
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu div a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Main */
+main {
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.chapitre {
+  position: page;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 16px;
+  padding: 16px 64px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 25px;
+}
+
+h2 {
+  margin: 25px;
+}
+
+/* Sommaire */
+.sommaire {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.sommaire li {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.sommaire li a {
+  color: black;
+  text-decoration: none;
+}
+
+.sommaire li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Media Query pour mobile */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+
+.list {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
