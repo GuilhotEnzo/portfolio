@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Document de redirection cherchant à ramener à la bonne page. Gentiment proposé par Dorian B -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="2; url=presentation.html">
+    <title>Redirecting to: Portfolio de Guilhot Enzo</title>
+    <style>
+        h1 {
+            font-size:30px;
+            text-align: center;
+            margin: 50px;
+        }
+        a {
+            padding: 10px;
+            box-shadow: none;
+            text-align: center;
+            margin: auto;
+            display: block;
+            width: 15vw;
+            min-width: 200px;
+            background-color: #1AA771;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+        a:hover {
+            background-color: #09845C;
+            box-shadow: 0 0 15px black;
+        }
+        .loader{
+            display: block;
+            position: relative;
+            height: 12px;
+            width: 80%;
+            margin: 20px auto auto;
+            border: 1px solid rgb(189, 189, 189);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .loader::after {
+            content: '';
+            width: 40%;
+            height: 100%;
+            background: darkblue;
+            position: absolute;
+            border-radius: 30px;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            animation: animloader 1.5s ease-in-out infinite;
+        }
+
+        @keyframes animloader {
+            0% {
+                left: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                left: 100%;
+                transform: translateX(0%);
+            }
+        }
+        body {
+            background-image: url('img/background.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<span class="loader"></span>
+<h1>Redirecting to your webpage...</h1>
+<a href="presentation.html">Click here if not done automatically</a>
+</body>
+</html>
